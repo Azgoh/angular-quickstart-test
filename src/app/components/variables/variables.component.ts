@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VARIABLES } from 'src/app/MockVariables';
+import { TaskService } from 'src/app/services/task.service';
 import { Variable } from 'src/app/Variable';
 
 @Component({
@@ -8,11 +8,12 @@ import { Variable } from 'src/app/Variable';
   styleUrls: ['./variables.component.css']
 })
 export class VariablesComponent implements OnInit {
-  variables: Variable[] = VARIABLES;
+  variables: Variable[] = [];
 
-  constructor() { }
+  constructor(private taskService:TaskService) { }
 
   ngOnInit(): void {
+    this.taskService.getVariables().subscribe((variables) => (this.variables = variables));
   }
 
 }

@@ -13,3 +13,8 @@
     margin: 20px;
     padding: 8px;
 }
+.value:hover, .name:hover{
+    cursor: pointer;
+    color: darkred;
+    font-weight: bold;
+}

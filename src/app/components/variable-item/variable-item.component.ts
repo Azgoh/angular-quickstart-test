@@ -14,4 +14,10 @@ export class VariableItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showName(variable: Variable){
+    console.log(variable.name);
+  }
+  showValue(variable: Variable){
+    console.log(variable.value);
+  }
 }
