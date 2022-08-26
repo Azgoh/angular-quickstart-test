@@ -1,17 +1,18 @@
 *{
     box-sizing: border-box;
+    font-size: 1.2em;
 }
-
 .container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+tr{
     border: 2px solid grey;
 }
-
 .name{
     margin: 20px;
     padding: 8px;
+
 }
 .value:hover, .name:hover{
     cursor: pointer;

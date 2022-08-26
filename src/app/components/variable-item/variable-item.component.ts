@@ -15,9 +15,9 @@ export class VariableItemComponent implements OnInit {
   }
 
   showName(variable: Variable){
-    console.log(variable.name);
+    console.log(typeof(variable.name));
   }
   showValue(variable: Variable){
-    console.log(variable.value);
+    console.log(typeof(variable.value));
   }
 }

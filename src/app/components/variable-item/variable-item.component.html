@@ -1,4 +1,6 @@
-<div class="container">
-    <h3 class="name">{{variable.name}}</h3>
-    <h4 class="value">{{variable.value}}</h4>
-</div>
+<table class="container">
+    <tr>
+    <td class="name" (click)="showName(variable)">{{variable.name}}</td>
+    <td class="value" (click)="showValue(variable)">{{variable.value}}</td>
+</tr>
+</table>
